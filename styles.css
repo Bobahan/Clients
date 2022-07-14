@@ -127,7 +127,7 @@
         background: #131313;
     }
 
-    .navbar__menu.active {  /* для js classList  */
+    .navbar__menu.active {  /* js classList .active  */
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -141,7 +141,7 @@
         padding-left: 25px;
     }
 
-    .navbar__toggle .bar { /* бургер для мобильной версии */
+    .navbar__toggle .bar { /* 3 блока в виде бургер для мобильной версии */
         width: 25px;
         height: 3px;
         margin: 5px auto;
@@ -181,7 +181,8 @@
         height: 80px;
         margin: 0;
     }
-/* каждый второй дочерний элемент */
+    
+/* каждый второй дочерний элемент бургера */
     #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
@@ -193,4 +194,50 @@
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-}   
+} 
+
+/* Hero Section */
+
+.main {
+    background-color: #141414;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin:  0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+    margin-top: 1em;
+    font-size: 2rem;
+    font-weight: ;
+}
