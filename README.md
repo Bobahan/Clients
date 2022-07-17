@@ -1,1 +1,1 @@
-Simple website created using HTML, CSS & Javascript with smooth scroll effect
+Simple website created using HTML and CSS
